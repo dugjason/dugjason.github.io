@@ -1,0 +1,39 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Jason Dugdale
+tagline:
+url:              http://jasondugdale.com
+paginate:         1
+baseurl:          /
+author:
+  name:           Jason Dugdale
+  url:            https://twitter.com/dugjason
+  github:         https://github.com/dugjason
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/dugjason/jasondugdale.com
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email:
+  facebook:
+  flickr:
+  github: dugjason
+  instagram:
+  linkedin:
+  pinterest:
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: dugjason
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+
+# Your disqus shortname, entering this will enable commenting on posts
+disqus:
