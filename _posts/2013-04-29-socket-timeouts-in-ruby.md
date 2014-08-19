@@ -7,7 +7,7 @@ I recently had a problem, which required me to close an open HTTP connection if 
 
 After a bit of Googling, I found that the [Timeout module](http://ruby-doc.org/stdlib-1.9.3/libdoc/timeout/rdoc/Timeout.html) baked into Ruby was probably not my best option. I looked deeper at my options, and arrived at using [IO.select](http://ruby-doc.org/core-2.0/IO.html#method-c-select):
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 begin
   ready = IO.select([@socket], nil, [@socket], @stream_timeout)
   unless ready
