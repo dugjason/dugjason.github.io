@@ -8,18 +8,18 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@dugjason">
   <meta name="twitter:creator" content="@dugjason">
-  {% if post.title %}
-  <meta name="twitter:title" content="{{ post.title }}">
+  {% if page.title %}
+  <meta name="twitter:title" content="{{ page.title }}">
   {% else %}
   <meta name="twitter:title" content="{{ site.title }}">
   {% endif %}
-  {% if post.url %}
-  <meta name="twitter:url" content="{{ site.url }}{{ post.url }}">
+  {% if page.url %}
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
   {% endif %}
-  {% if post.description %}
-  <meta name="twitter:description" content="{{ post.description }}">
+  {% if page.description %}
+  <meta name="twitter:description" content="{{ page.description }}">
   {% else %}
-  <meta name="twitter:description" content="{{ post.title }}">
+  <meta name="twitter:description" content="{{ page.title }}">
   {% endif %}
 
   <title>
