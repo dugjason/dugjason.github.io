@@ -5,6 +5,21 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@dugjason">
+  <meta name="twitter:creator" content="@dugjason">
+  {% if post.title %}
+    <meta name="twitter:title" content="{{ post.title }}">
+  {% else %}
+    <meta name="twitter:title" content="{{ site.title }}">
+  {% endif %}
+  {% if post.url %}
+    <meta name="twitter:url" content="{{ site.url }}{{ post.url }}">
+  {% endif %}
+  {% if post.description %}
+    <meta name="twitter:description" content="{{ post.description }}">
+  {% endif %}
+
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline }}
