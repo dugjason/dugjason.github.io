@@ -21,6 +21,9 @@ version:          1.0.0
 github:
   repo:           https://github.com/dugjason/jasondugdale.com
 
+gems:
+ - jekyll-paginate
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
