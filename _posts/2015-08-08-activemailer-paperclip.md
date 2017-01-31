@@ -5,7 +5,7 @@ title: ActiveMailer PDF Email Attachments with Paperclip
 
 Let's say we have a ```Report``` model, which has PDFs as Paperclip attachments:
 
-```
+``` ruby
 # /app/models/report.rb
 class Report < ActiveRecord::Base
   belongs_to :user
@@ -20,11 +20,11 @@ For this example, I've set up an ActionMailer mailer to send the email, and an A
 
 ## Creating the ActiveJob job
 
-```
+``` ruby
 rails g job generateReportPdf
 ```
 
-```
+``` ruby
 # /app/jobs/generate_report_pdf_job.rb
 class GenerateReportPdfJob < ActiveJob::Base
   queue_as :default
@@ -67,11 +67,11 @@ class GenerateReportPdfJob < ActiveJob::Base
 
 Now we create the mailer which will call out to this ActiveJob job to generate the PDF:
 
-```
+``` ruby
 rails g mailer reportPdf
 ```
 
-```
+``` ruby
 # /app/mailers/report_pdf.rb
 class ReportPdf < ApplicationMailer
   def send_mail(report_id:)
