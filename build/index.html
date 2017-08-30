@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jason Dugdale</title>
+<meta content='Jason Dugdale&#39;s Personal Blog' name='description'>
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='True' name='HandheldFriendly'>
+<meta content='Jason Dugdale' property='og:site_name'>
+<meta content='website' property='og:type'>
+<meta content='Jason Dugdale&#39;s Personal Blog' property='og:description'>
+<meta content='https://www.jasondugdale.com/' property='og:url'>
+<meta content='summary' name='twitter:card'>
+<meta content='dugjason' name='twitter:site'>
+<meta content='Jason Dugdale&#39;s Personal Blog' name='twitter:description'>
+<meta content='https://www.jasondugdale.com/' name='twitter:url'>
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+<link href="/images/favicon.ico" rel="icon" type="image/ico" />
+<link href='//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400' rel='stylesheet' type='text/css'>
+<link href="/stylesheets/application.css" rel="stylesheet" />
+</head>
+<body class='home-template nav-closed'>
+<div class='nav'>
+<h3 class='nav-title'>Menu</h3>
+<a class='nav-close' href='#'>
+<span class='hidden'>Close</span>
+</a>
+<ul>
+<li class='nav-home nav-current'>
+<a href='/'>Home</a>
+</li>
+</ul>
+<a class='subscribe-button icon-feed' href='/feed.xml'>Subscribe</a>
+</div>
+<span class='nav-cover'></span>
+
+<div class='site-wrapper'>
+<header class='main-header no-cover'>
+<nav class='main-nav overlay clearfix'>
+<a class='menu-button icon-menu' href='#'>
+<span class='word'>Menu</span>
+</a>
+</nav>
+<div class='vertical'>
+<div class='main-header-content inner'>
+<h1 class='page-title'>Jason Dugdale</h1>
+<h2 class='page-description'>Jason Dugdale's Personal Blog</h2>
+</div>
+</div>
+<a class='scroll-down icon-arrow-left' data-offset='-45' href='#content'>
+<span class='hidden'>Scroll Down</span>
+</a>
+</header>
+<main class='content' id='content' role='main'>
+<div class='extra-pagination inner'>
+<nav class='pagination' role='pagination'>
+<span class='page-number'>Page 1 of 1</span>
+</nav>
+
+</div>
+<article class='post'>
+<header class='post-header'>
+<h2 class='post-title'><a href="/2015/08/08/activemailer-paperclip/">ActiveMailer PDF Email Attachments with Paperclip</a></h2>
+</header>
+<section class='post-excerpt'>
+<p>
+Let’s say we have a Report model, which has PDFs as Paperclip attachments:
+# /app/models/report.rb
+class Report &lt; ActiveRecord::Base
+  belongs_to :user
+  has_attached_file :pdf
+  validates_attachment :pdf, content_type: { content_type: "application/pdf
+<a href="/2015/08/08/activemailer-paperclip/" class="read-more">&raquo;</a>
+</p>
+</section>
+<footer class='post-meta'>
+<a href='/author/jason-dugdale/'>Jason Dugdale</a>
+<time class='post-date' datetime='2015-08-08'>
+08 August 2015
+</time>
+</footer>
+</article>
+<article class='post'>
+<header class='post-header'>
+<h2 class='post-title'><a href="/2013/04/29/socket-timeouts-in-ruby/">Socket Timeouts in Ruby</a></h2>
+</header>
+<section class='post-excerpt'>
+<p>
+I recently had a problem, which required me to close an open HTTP connection if it had not received any new data for a certain amount of time.
+
+After a bit of Googling, I found that the Timeout module baked into Ruby was probably not my best option. I
+<a href="/2013/04/29/socket-timeouts-in-ruby/" class="read-more">&raquo;</a>
+</p>
+</section>
+<footer class='post-meta'>
+<a href='/author/jason-dugdale/'>Jason Dugdale</a>
+<time class='post-date' datetime='2013-04-29'>
+29 April 2013
+</time>
+</footer>
+</article>
+<article class='post'>
+<header class='post-header'>
+<h2 class='post-title'><a href="/2013/04/09/ruby-loaderror-cannot-load-such-file/">Ruby LoadError: cannot load such file</a></h2>
+</header>
+<section class='post-excerpt'>
+<p>
+So, you’ve just upgraded your Ruby app to Ruby 1.9.2, 1.9.3, 2.0.0, or greater, and you’re hit with:
+ LoadError: cannot load such file -- somefile
+
+Your code will most likely look something like this:
+ require 'my-ruby-code'
+ require 'some-gem'
+ ...
+
+<a href="/2013/04/09/ruby-loaderror-cannot-load-such-file/" class="read-more">&raquo;</a>
+</p>
+</section>
+<footer class='post-meta'>
+<a href='/author/jason-dugdale/'>Jason Dugdale</a>
+<time class='post-date' datetime='2013-04-09'>
+09 April 2013
+</time>
+</footer>
+</article>
+<nav class='pagination' role='pagination'>
+<span class='page-number'>Page 1 of 1</span>
+</nav>
+
+
+</main>
+
+<footer class='site-footer clearfix'>
+<section class='copyright'>
+<a href='/'>Jason Dugdale</a>
+&copy;
+2017
+</section>
+<section class='poweredby'>
+Casper theme powered by
+<a href='https://ghost.org'>Ghost</a>
+</section>
+</footer>
+</div>
+<script src="/javascripts/application.js"></script>
+</body>
+</html>
