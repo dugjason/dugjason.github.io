@@ -26,6 +26,6 @@ Don’t panic! In Ruby 1.9.2, the current path was removed from the load path, s
  ...
 ```
 
-You can also do this by using File.expand_path(__FILE__)
+You can also do this by using `File.expand_path(__FILE__)`
 
 **Note:** You do not need to change any require statements for your Gems – the load path for your Gems is managed by RubyGems.
