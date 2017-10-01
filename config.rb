@@ -6,7 +6,6 @@ config[:casper] = {
   blog: {
     url: 'https://www.jasondugdale.com',
     name: 'Jason Dugdale',
-    description: 'Jason Dugdale\'s Personal Blog',
     date_format: '%d %B %Y',
     navigation: true,
     logo: nil # Optional
