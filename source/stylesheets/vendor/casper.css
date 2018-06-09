@@ -542,8 +542,8 @@ button {
 /* Creates a responsive wrapper that makes our content scale nicely */
 .inner {
     position: relative;
-    width: 80%;
-    max-width: 710px;
+    width: 85%;
+    max-width: 810px;
     margin: 0 auto;
 }
 
@@ -994,8 +994,8 @@ body.nav-opened .nav {
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
-    width: 80%;
-    max-width: 710px;
+    width: 85%;
+    max-width: 810px;
     margin: 4rem auto;
     padding-bottom: 4rem;
     border-bottom: #EBF2F6 1px solid;
@@ -1575,8 +1575,8 @@ body.page-template .post-title {
 /* The main wrapper for our pagination links */
 .pagination {
     position: relative;
-    width: 80%;
-    max-width: 710px;
+    width: 85%;
+    max-width: 810px;
     margin: 4rem auto;
     font-family: "Open Sans", sans-serif;
     font-size: 1.3rem;
