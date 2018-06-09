@@ -2,11 +2,8 @@
 # the following line to use 'http://'
 source 'https://rubygems.org'
 
-# Windows does not come with time zone data
-gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
-
 # Middleman Gems
-gem 'middleman-livereload'
+gem 'middleman-livereload', '~> 3.4'
 gem 'middleman', '~> 4.2'
 gem 'middleman-blog', '~> 4.0'
 gem 'middleman-sprockets', '~> 4.1'
